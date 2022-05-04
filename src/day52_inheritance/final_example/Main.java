@@ -1,0 +1,24 @@
+package day52_inheritance.final_example;
+
+public class Main {
+    public static void main(String[] args) {
+
+        new Parent().walk();
+        new Child().walk();
+
+    }
+}
+
+class Parent {
+    public final void walk(){
+        System.out.println("You are walking");
+    }
+}
+
+class Child extends Parent{
+//    @Override // can't override a final class
+//    public final void walk (){
+//
+//    }
+    //we cannot override the final methods
+}
