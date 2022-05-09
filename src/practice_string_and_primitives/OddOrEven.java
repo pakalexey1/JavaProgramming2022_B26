@@ -1,4 +1,4 @@
-package practice_string;
+package practice_string_and_primitives;
 
 public class OddOrEven {
 
