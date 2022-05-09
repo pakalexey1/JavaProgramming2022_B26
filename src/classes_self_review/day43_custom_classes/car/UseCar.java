@@ -1,4 +1,4 @@
-package classes_self_review.day43_custom_classes;
+package classes_self_review.day43_custom_classes.car;
 
 public class UseCar {
     public static void main(String[] args) {
