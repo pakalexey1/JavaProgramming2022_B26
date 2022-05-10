@@ -14,3 +14,5 @@ public class Factorial {
         return n;
     }
 }
+
+// Do a factorial
