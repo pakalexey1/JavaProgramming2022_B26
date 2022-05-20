@@ -1,4 +1,4 @@
-package tasks_from_festina.group15_task;
+package tasks_from_festina.group15tasks_2022may19;
 
 public class DivideWithoutOperator {
     public static void main(String[] args) {
