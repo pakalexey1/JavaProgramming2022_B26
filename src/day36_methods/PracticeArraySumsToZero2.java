@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class PracticeArraySumsToZero2 {
 
     public static void main(String[] args) {
-        System.out.println(sumArrayElementsToZero(99));
+        System.out.println(sumArrayElementsToZero(5));
     }
 
     public static ArrayList<Integer> sumArrayElementsToZero(int numberOfElements) {
@@ -19,7 +19,7 @@ public class PracticeArraySumsToZero2 {
                 randomNum = IntUtil.random_int(-numberOfElements, numberOfElements);
                 if (!list.contains(randomNum)) {
                     list.add(randomNum);
-                    i++;
+                    i++; // moved the iterator here to go to the next element, only after the unique number is generated
                 }
             }
             for (Integer eachElement : list) {

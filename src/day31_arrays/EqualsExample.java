@@ -10,7 +10,7 @@ public class EqualsExample {
         int[] c = a;
         System.out.println(a==b);
         System.out.println(Arrays.equals(a,b));
-        System.out.println(a==c); // compares the array with array, the are both reference to the same array object
+        System.out.println(a==c); // compares the array with array, they are both reference to the same array object
         System.out.println(a.equals(b)); //this is not the same as Arrays.equals()
 
     }

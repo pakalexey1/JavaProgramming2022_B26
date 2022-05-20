@@ -7,7 +7,7 @@ import java.util.Random;
 public class PracticeArraySumsToZero {
 
     public static void main(String[] args) {
-        System.out.println(arraySumsToZero(5));
+        System.out.println(arraySumsToZero(3));
     }
 
     public static ArrayList<Integer> arraySumsToZero(int numberOfElements) {
