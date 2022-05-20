@@ -1,4 +1,4 @@
-package tasks_from_festina.group15tasks;
+package tasks_from_festina.group15tasks_2022may15;
 
 public class DivisibleBy3And5And15 {
     public static void main(String[] args) {
