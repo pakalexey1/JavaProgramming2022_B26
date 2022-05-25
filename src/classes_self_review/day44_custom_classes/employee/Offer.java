@@ -1,9 +1,10 @@
 package classes_self_review.day44_custom_classes.employee;
 
 public class Offer {
+
     String location;
     String company;
-    double salary;
+    public double salary;
     boolean isFullTime;
     int numberOfPTO;
 
@@ -24,10 +25,10 @@ public class Offer {
     }
 
     public String toString() {
-        String info = company + " located at " + location;
-        info += "\n" + (salary > 0 ? salary : "");
-        info += "\n" + (isFullTime ? "Full time" : "Contract");
-        info += "\n" + (numberOfPTO>0 ? numberOfPTO : "");
+        String info = "\n"+company + " located at " + location;
+        info += ", " + (salary > 0 ? salary : "");
+        info += ", " + (isFullTime ? "Full time" : "Contract");
+        info += ", " + (numberOfPTO>0 ? numberOfPTO : "")+" | ";
         return info;
 
     }

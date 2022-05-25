@@ -17,6 +17,10 @@ public class QueueObjects {
         queue.offer(30);// same as add method
         System.out.println(queue);
 
+        System.out.println(queue.peek());
+        queue.remove();
+        System.out.println(queue);
+
         //System.out.println(new PriorityQueue<>().remove());// causes exception because there are not elements
         System.out.println(new PriorityQueue<>().poll()); // returns null
 
