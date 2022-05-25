@@ -7,17 +7,20 @@ public class sortString {
         String str = "1DC501GCCCA098911a";
         System.out.println(sortString(str));
     }
-    public static ArrayList<String> sortString(String str) {
+
+    public static String sortString(String str) {
         String temp = "";
-       ArrayList<String> output = new ArrayList<>();
-        int count = 0;
-        for (int i = 0; i < str.length()-1; i++) {
-            if ((Character.isDigit(str.charAt(i)) && Character.isDigit(str.charAt(i+1))) || Character.isLetter(str.charAt(i)) && Character.isLetter(str.charAt(i+1))){
-                temp+=str.charAt(i)+"";
-            }else{
-                temp+=str.charAt(i)+"";
+        ArrayList<String> output = new ArrayList<>();
+
+        //Splitting the string into smaller parts, each being a group of digits or letters, and then putting each
+        // group as an element into ArrayList<String> output
+        for (int i = 0; i < str.length() - 1; i++) {
+            if ((Character.isDigit(str.charAt(i)) && Character.isDigit(str.charAt(i + 1))) || Character.isLetter(str.charAt(i)) && Character.isLetter(str.charAt(i + 1))) {
+                temp += str.charAt(i) + "";
+            } else {
+                temp += str.charAt(i) + "";
                 output.add(temp);
-                temp="";
+                temp = "";
             }
         }
         if (!temp.isEmpty()) {
@@ -27,22 +30,32 @@ public class sortString {
             } else {
                 output.add(str.charAt(str.length() - 1) + "");
             }
-        }else{
+        } else {
             output.add(str.charAt(str.length() - 1) + "");
         }
-        ArrayList<String>finalOutput = new ArrayList<>();
+
+        //Below is sorting of each element of the ArrayList <String> output into an ArrayList<String> finalOutput
+        // with each element sorted
+        ArrayList<String> finalOutput = new ArrayList<>();
         for (int i = 0; i < output.size(); i++) {
             String[] arrToSort = (output.get(i).split(""));
             Arrays.sort(arrToSort);
-            String tempStr ="";
+            String tempStr = "";
             for (int j = 0; j < arrToSort.length; j++) {
-                    tempStr+=arrToSort[j];
+                tempStr += arrToSort[j];
             }
             finalOutput.add(tempStr);
 
         }
 
-        return finalOutput;
+        //Below is converting the ArrayList <String> finalOutput into a String to produce the method's output in a
+        // String format
+        String outputStr = "";
+        for (String each : finalOutput) {
+            outputStr += each + "";
+        }
+
+        return outputStr;
     }
 
 }
