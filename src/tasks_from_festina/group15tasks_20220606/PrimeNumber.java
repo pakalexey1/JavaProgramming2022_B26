@@ -2,7 +2,7 @@ package tasks_from_festina.group15tasks_20220606;
 
 public class PrimeNumber {
     public static void main(String[] args) {
-        System.out.println(isPrime(14));
+        System.out.println(isPrime(7));
     }
     public static boolean isPrime(int num){
         int count=0;
@@ -12,7 +12,7 @@ public class PrimeNumber {
             }
         }
 
-        return (count>0);
+        return (count==0);
     }
 }
 /*
