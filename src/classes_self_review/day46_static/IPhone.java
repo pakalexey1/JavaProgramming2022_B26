@@ -7,11 +7,17 @@ public class IPhone {
 
     static String company;
     static String os;
+    static boolean appleDay;
+    static String day;
 
     static {
         System.out.println("STATIC BLOCK RUN");
         company = "Apple";
         os = "iOS";
+        day = "Wednesday";
+        if (day.equals("Friday")){
+            appleDay=true;
+        }
     }
 
     public IPhone(String model, double price) {
