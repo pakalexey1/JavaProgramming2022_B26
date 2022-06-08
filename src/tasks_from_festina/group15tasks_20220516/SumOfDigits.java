@@ -1,6 +1,4 @@
-package tasks_from_festina.group15tasks_2022may16;
-
-import java.util.ArrayList;
+package tasks_from_festina.group15tasks_20220516;
 
 public class SumOfDigits {
 

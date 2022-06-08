@@ -1,4 +1,4 @@
-package tasks_from_festina.group15tasks_2022may19;
+package tasks_from_festina.group15tasks_20220519;
 
 public class EvenOrOdd {
     public static void main(String[] args) {

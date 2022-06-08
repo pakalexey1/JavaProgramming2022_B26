@@ -1,4 +1,4 @@
-package tasks_from_festina.group15tasks_2022may16;
+package tasks_from_festina.group15tasks_20220516;
 
 import java.util.Arrays;
 

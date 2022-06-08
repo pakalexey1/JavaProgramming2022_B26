@@ -1,6 +1,4 @@
-package tasks_from_festina.group15task_2022june06;
-
-import java.util.Arrays;
+package tasks_from_festina.group15task_20220606;
 
 public class ArmstrongNumber {
     public static void main(String[] args) {

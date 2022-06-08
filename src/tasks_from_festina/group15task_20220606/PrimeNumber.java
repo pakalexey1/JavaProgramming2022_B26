@@ -1,4 +1,4 @@
-package tasks_from_festina.group15task_2022june06;
+package tasks_from_festina.group15task_20220606;
 
 public class PrimeNumber {
     public static void main(String[] args) {

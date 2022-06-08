@@ -1,4 +1,4 @@
-package tasks_from_festina.group15tasks_2022may15;
+package tasks_from_festina.group15tasks_20220515;
 
 public class FinrRa {
 
