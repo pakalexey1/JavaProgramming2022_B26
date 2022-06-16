@@ -25,7 +25,6 @@ public class ArmstrongNumber {
         }
 
         return (num==numSum);
-
     }
 }
 //Write a method that can check if a number is Armstrong  number

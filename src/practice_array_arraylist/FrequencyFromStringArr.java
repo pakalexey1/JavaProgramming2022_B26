@@ -19,15 +19,14 @@ public class FrequencyFromStringArr {
 
         String output = "";
         for (String each: arrList){
-            int count = Collections.frequency(arrList,each);
             if (output.contains(each)){
                 continue;
             }
+            int count = Collections.frequency(arrList,each);
             output+=each+count;
         }
 
         return output;
-
     }
 }
 

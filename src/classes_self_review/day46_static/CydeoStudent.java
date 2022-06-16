@@ -3,12 +3,12 @@ package classes_self_review.day46_static;
 import java.util.Arrays;
 
 public class CydeoStudent {
-    String name;
-    int groupNumber;
+    public String name;
+    public int groupNumber;
 
-    static int batchNumber;
-    static String[] instructors;
-    static String schoolName;
+    public static int batchNumber;
+    public static String[] instructors;
+    public static String schoolName;
 
     static {
         batchNumber = 26;

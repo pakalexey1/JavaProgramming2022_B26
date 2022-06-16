@@ -1,4 +1,4 @@
-package day48_encapsulation.square;
+package classes_self_review.day48_encapsulation;
 
 public class Square {
 
@@ -57,4 +57,8 @@ create a class called square
             print the side, area, and perimeter of the Square object
 
      */
+
+
 }
+
+
