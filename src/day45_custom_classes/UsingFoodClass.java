@@ -29,7 +29,7 @@ public class UsingFoodClass {
 
         System.out.println(Arrays.toString(allFood));
 
-        //calculate the total price of the shopping list
+        //calculate the total price of the Shopping list
 
         double totalPriceAll = 0;
 

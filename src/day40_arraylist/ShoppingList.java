@@ -40,7 +40,7 @@ public class ShoppingList {
                 shoppingList.remove(removeItem);
             }
             System.out.println(removeItem + " removed from the Shopping List");
-            System.out.println("Updated shopping List:" + shoppingList.size() + " items:");
+            System.out.println("Updated Shopping List:" + shoppingList.size() + " items:");
             for (String item : shoppingList) {
                 System.out.println("*\t" + item);
             }
