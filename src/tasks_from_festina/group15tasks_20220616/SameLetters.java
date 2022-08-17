@@ -3,7 +3,7 @@ package tasks_from_festina.group15tasks_20220616;
 public class SameLetters {
 
     public static void main(String[] args) {
-        System.out.println(sameLetters("babc", "cabb"));
+        System.out.println(sameLetters("babcc", "cabb"));
     }
 
     public static boolean sameLetters(String str1, String str2) {
@@ -17,8 +17,6 @@ public class SameLetters {
                     return false;
                 }
             }
-        } else {
-            return false;
         }
         return str2.isEmpty();
     }
