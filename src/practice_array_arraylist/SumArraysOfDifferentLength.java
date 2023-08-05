@@ -44,7 +44,7 @@ public class SumArraysOfDifferentLength {
 //int a[]={1,2,3};// length 3
 //int b[]={4,5,6,7,8};// length 5
 //
-//outputint a[]={1,2,3};// length 3
-////int b[]={4,5,6,7,8};// length 5
+//output int a[]={1,2,3};// length 3
+//int b[]={4,5,6,7,8};// length 5
 //[5, 7, 9, 7, 8]
      */
