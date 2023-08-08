@@ -9,11 +9,17 @@ public class ArrayListExample {
         items.add(2);
         items.add(3);
         items.add(4);
-        items.add("apple");
+//        items.add("apple");
 
-        //printDouble(items;
-        for(Object item : items) {
-            System.out.println((Integer)item*2);
+        printDouble(items);
+//        for (Object item : items) {
+//            System.out.println((Integer) item * 2);
+//        }
+    }
+
+    private static void printDouble(ArrayList<Integer> items) {
+        for (int i : items) {
+            System.out.println(i*2);
         }
     }
 }
