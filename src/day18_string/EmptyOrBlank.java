@@ -12,7 +12,7 @@ public class EmptyOrBlank {
         String s = " ";
         System.out.println("isEmpty"+s.isEmpty());// false because space is a character
 
-        System.out.println("isBlank: " + s.isBlank());// true as isBlank doesn't count spaces
+//        System.out.println("isBlank: " + s.isBlank());// true as isBlank doesn't count spaces
 
 
 

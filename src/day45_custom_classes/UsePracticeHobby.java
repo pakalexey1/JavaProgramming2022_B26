@@ -21,8 +21,7 @@ public class UsePracticeHobby {
             each.doIt();
         }
 
-        allHobbies.addAll(List.of(new PracticeHobby("cycling", 100, false, false)
-        ));
+//        allHobbies.addAll(List.of(new PracticeHobby("cycling", 100, false, false)));
 
         System.out.println("=========================");
         ArrayList<PracticeHobby> removeOutDoors = new ArrayList<>(allHobbies);
