@@ -11,7 +11,7 @@ public class ArraySorting {
         as.sort(bs);
 
         Sorting noLambda = new QuickSort();
-        noLambda.sort();;
+        noLambda.sort();
 
         Sorting quickSort = () -> System.out.println("Quick sorting");
         as.sort(quickSort);

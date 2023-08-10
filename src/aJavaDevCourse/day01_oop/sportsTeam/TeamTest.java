@@ -6,13 +6,15 @@ public class TeamTest{
     public static void main(String[] args) {
         FootballPlayer joe = new FootballPlayer("Joe");
         BaseballPlayer pat = new BaseballPlayer("Pat");
-        SoccerPlayer backham = new SoccerPlayer("Backham");
+        SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team liverpool = new Team("Liverpool");
+//        Team liverpool = new Team("Liverpool");
 
-        liverpool.addPlayer(joe);
-        liverpool.addPlayer(pat);
-        liverpool.addPlayer(backham);
+        Team<SoccerPlayer> liverpool = new Team<>("Liverpool");
+
+        liverpool.addPlayer(beckham);
+
+//        Team <String> teamString = new Team<String>("String Team"); //doesn't accept string anymore because Team only accepts <Player> type of objects
 
         System.out.println(liverpool.numPlayers());
     }

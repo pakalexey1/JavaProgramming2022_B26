@@ -10,7 +10,10 @@ public class AppleTest {
         inventory.add(new Apple(300,Color.GREEN));
         inventory.add(new Apple(200,Color.RED));
         inventory.add(new Apple(100,Color.GREEN));
-        inventory.add(new Apple(0,Color.RED));
+        inventory.add(new Apple(50,Color.RED));
+
+//        AppleHeavyPredicate heavy = new AppleHeavyPredicate();
+//        List<Apple> heavyApple = filterApples(inventory, heavy);
 
         List<Apple> heavyApple = filterApples(inventory,new AppleHeavyPredicate());
         System.out.println(heavyApple);
