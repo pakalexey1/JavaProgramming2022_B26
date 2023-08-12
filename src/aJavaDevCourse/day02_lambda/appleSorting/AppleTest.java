@@ -2,6 +2,7 @@ package aJavaDevCourse.day02_lambda.appleSorting;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class AppleTest {
     public static void main(String[] args) {
@@ -20,8 +21,23 @@ public class AppleTest {
 
         List<Apple> greenApple = filterApples(inventory, new AppleGreenColorPredicate());
         System.out.println(greenApple);
+
+        System.out.println("------------PREDICATE-------------");
+        List<Apple> greenApplePredicate = lambdaFilter(inventory, apple -> apple.getColor().equals(Color.GREEN));
+        System.out.println(greenApplePredicate);
     }
 
+    //using predicate
+    private static List<Apple> lambdaFilter(List<Apple> inventory, Predicate<Apple> predicate){
+        List<Apple> result = new ArrayList<>();
+        for (Apple apple : inventory){
+        if (predicate.test(apple)){
+            result.add(apple);
+        }
+        }
+        return result;
+    }
+    //using traditional format
     private static List<Apple> filterApples(List<Apple> inventory, ApplePredicate applePredicate) {
 
         List<Apple> result = new ArrayList<>();
@@ -31,7 +47,6 @@ public class AppleTest {
                 result.add(apple);
             }
         }
-
         return result;
     }
 }
