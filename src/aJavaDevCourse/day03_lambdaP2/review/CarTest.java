@@ -25,7 +25,13 @@ public class CarTest {
 //        System.out.println(filterNewCars(carList));
         System.out.println(filterCars(carList, new CarNewPredicate()));
 
-        CarPredicate carPredicate = (Car car) -> true;
+        System.out.println("Lambda Fast Cars");
+        CarPredicate carPredicate = (Car car1) -> car1.getTopSpeed()>160;
+        System.out.println(filterCars(carList,carPredicate));
+
+        System.out.println("Lambda New Cars");
+        System.out.println(filterCars(carList, (Car car2) -> car2.getYear()>2015));
+
     }
 
     //Using two methods to create two very similar methods
@@ -51,15 +57,15 @@ public class CarTest {
 
 
     //Using functional interface approach:
-//    private static List<Car> filterCars(List<Car> cars, CarPredicate carPredicate){
-//        List<Car> filteredCars = new ArrayList<>();
-//        for(Car car: cars){
-//            if (carPredicate.test(car)){
-//                filteredCars.add(car);
-//            }
-//        }
-//        return filteredCars;
-//    }
+    private static List<Car> filterCars(List<Car> cars, CarPredicate carPredicate){
+        List<Car> filteredCars = new ArrayList<>();
+        for(Car car: cars){
+            if (carPredicate.test(car)){
+                filteredCars.add(car);
+            }
+        }
+        return filteredCars;
+    }
 
     //Using Lambda
 
