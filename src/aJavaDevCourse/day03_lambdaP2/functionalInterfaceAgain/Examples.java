@@ -1,8 +1,6 @@
 package aJavaDevCourse.day03_lambdaP2.functionalInterfaceAgain;
 
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class Examples {
     public static void main(String[] args) {
@@ -34,5 +32,17 @@ public class Examples {
         //*************BiConsumer*****************//
         BiConsumer<Integer,Integer> addTwo = (x,y)-> System.out.println(x+y);
         addTwo.accept(100,200);
+
+
+        //*************Function*****************//
+        Function<String,String> funct = s -> "Hello " + s;
+        String str = funct.apply("Alex");
+        System.out.println(str);
+
+
+
+        //*************Supplier*****************//
+        Supplier<Double> supplr = () -> Math.random();
+        System.out.println(supplr.get());
     }
 }

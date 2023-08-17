@@ -1,4 +1,4 @@
-package aJavaDevCourse.day03_lambdaP2.fucntionalInterfaces.UsersPractice;
+package aJavaDevCourse.day03_lambdaP2.fucntionalInterfaces.usersPractice;
 
 import lombok.Builder;
 import lombok.Data;
