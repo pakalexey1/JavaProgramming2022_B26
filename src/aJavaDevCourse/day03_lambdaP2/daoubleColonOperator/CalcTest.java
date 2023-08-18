@@ -13,7 +13,7 @@ public class CalcTest {
         Calculate s2 = Calculator::findSum;
         s2.calculate(100,35);
 
-        //Reference an isntance method
+        //Reference an instance method
         Calculate m1 = (x,y) -> new Calculator().findMultiply(x,y);
         m1.calculate(5,6);
 

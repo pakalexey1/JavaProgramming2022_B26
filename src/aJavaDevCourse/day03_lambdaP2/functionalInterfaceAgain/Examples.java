@@ -40,9 +40,9 @@ public class Examples {
         System.out.println(str);
 
 
-
         //*************Supplier*****************//
         Supplier<Double> supplr = () -> Math.random();
         System.out.println(supplr.get());
+
     }
 }
