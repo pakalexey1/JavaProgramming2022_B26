@@ -36,5 +36,12 @@ public class StreamOperations {
                 .map(number -> number*2) //doubled every number in the array
                 .filter(i->i%3==0) //filtered only those that are divisible by 3
                 .forEach(System.out::println);
+
+
+        System.out.println("------------COUNT OF CHARACTERS-------------");
+        List<String> words = Arrays.asList("JAVA","APPLE","HONDA","DEVELOPER");
+        words.stream()
+                .map(w -> w.length())//The same as map(String::length)
+                .forEach(System.out::println);
     }
 }
