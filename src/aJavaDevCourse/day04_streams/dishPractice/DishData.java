@@ -9,9 +9,9 @@ public class DishData {
                 new Dish("pork",false,800,Type.MEAT),
                 new Dish("beef",false,700,Type.MEAT),
                 new Dish("chicken",false,400,Type.MEAT),
-                new Dish("french fries",false,530,Type.OTHER),
-                new Dish("rice",false,350,Type.OTHER),
-                new Dish("season fruit",false,120,Type.MEAT),
+                new Dish("french fries",true,530,Type.OTHER),
+                new Dish("rice",true,350,Type.OTHER),
+                new Dish("season fruit",true,120,Type.MEAT),
                 new Dish("shrimp",false,300,Type.FISH),
                 new Dish("salmon",false,450,Type.FISH)
         );
