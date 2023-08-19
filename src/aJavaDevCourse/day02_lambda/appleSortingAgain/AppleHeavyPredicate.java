@@ -1,4 +1,4 @@
-package aJavaDevCourse.day02_lambda.AppleSortingAgain;
+package aJavaDevCourse.day02_lambda.appleSortingAgain;
 
 public class AppleHeavyPredicate implements ApplePredicate{
     @Override
