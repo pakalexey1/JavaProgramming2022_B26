@@ -42,6 +42,7 @@ public class LongestCommonPrefix {
 //        return output;
 //    }
 }
+//
 /*
 Example 1:
 
