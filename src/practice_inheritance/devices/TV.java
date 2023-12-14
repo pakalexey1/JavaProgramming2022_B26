@@ -2,8 +2,8 @@ package practice_inheritance.devices;
 
 public class TV extends Device {
 
-public TV (String brand, String model, double price, boolean isWireless){
-    super (brand, model, price, isWireless);
+    public TV (String brand, String model, double price, boolean isWireless){
+        super(brand, model, price, isWireless);
 }
 
     @Override

@@ -3,7 +3,7 @@ package practice_loop;
 public class RemoveDuplicatesArr {
 
     public static void main(String[] args) {
-        System.out.println(noDuplicates("hello"));
+        System.out.println(noDuplicates("abcsklabc"));
     }
 
     public static String noDuplicates (String str){

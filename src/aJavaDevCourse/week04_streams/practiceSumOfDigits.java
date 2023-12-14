@@ -1,6 +1,6 @@
 package aJavaDevCourse.week04_streams;
 
-public class practice {
+public class practiceSumOfDigits {
     public static void main(String[] args) {
         String str = "aksljd23lk3";
         System.out.println(sumOfDigits(str));
