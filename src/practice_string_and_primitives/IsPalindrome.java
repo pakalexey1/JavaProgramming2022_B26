@@ -4,11 +4,22 @@ public class IsPalindrome {
     public static void main(String[] args) {
         String first="abcc !Ba";
         System.out.println(isPalindrome(first));
+        System.out.println(isPalindromeAgain(first));
     }
     public static boolean isPalindrome (String str){
         String str2 = str.toLowerCase().replaceAll("[^a-zA-Z0-9]","");
         String output="";
         for (int i = str2.length()-1; i >=0 ; i--) {
+            output+=str2.charAt(i);
+        }
+
+        return output.equals(str2);
+    }
+
+    public static boolean isPalindromeAgain(String str){
+        String str2 = str.toLowerCase().replaceAll("[^a-zA-Z0-9]","");
+        String output = "";
+        for (int i = str2.length()-1; i >=0; i--) {
             output+=str2.charAt(i);
         }
 

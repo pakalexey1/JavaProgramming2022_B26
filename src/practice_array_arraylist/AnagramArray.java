@@ -14,6 +14,10 @@ public class AnagramArray {
         System.out.println(isAnagramArray(g,h));
 
         System.out.println(isAnagramList(g,h));
+
+        System.out.println(isAnagramTwoMore(g,h));
+
+        System.out.println("newAnagramTest(g,h) = " + newAnagramTest(g, h));
     }
 
     public static boolean anagramArray(String a, String b) {
@@ -33,8 +37,8 @@ public class AnagramArray {
     public static boolean isAnagram(String a, String b){
 
         if (a.length() == b.length()) {
-            List<String> arrayA = new ArrayList<String>(Arrays.asList(a.split("")));
-            List<String> arrayB = new ArrayList<String>(Arrays.asList(b.split("")));
+            List<String> arrayA = new ArrayList<>(Arrays.asList(a.split("")));
+            List<String> arrayB = new ArrayList<>(Arrays.asList(b.split("")));
             Collections.sort(arrayA);
             Collections.sort(arrayB);
             return  arrayA.equals(arrayB);
@@ -62,8 +66,8 @@ public class AnagramArray {
 
         if (a.length() == b.length()){
 
-            List<String> listA = new ArrayList<String>(Arrays.asList(a.split("")));
-            List<String> listB = new ArrayList<String>(Arrays.asList(b.split("")));
+            List<String> listA = new ArrayList<>(Arrays.asList(a.split("")));
+            List<String> listB = new ArrayList<>(Arrays.asList(b.split("")));
             Collections.sort(listA);
             Collections.sort(listB);
 
@@ -71,6 +75,42 @@ public class AnagramArray {
         }
 
         return false;
+    }
+
+    public static boolean isAnagramTwoMore(String a, String b){
+
+        if (a.length() == b.length()) {
+            List<String> aList = new ArrayList<>(Arrays.asList(a.split("")));
+            List<String> bList = new ArrayList<>(Arrays.asList(b.split("")));
+
+            Collections.sort(aList);
+            Collections.sort(bList);
+            return aList.equals(bList);
+
+        }
+
+        return false;
+    }
+
+    public static boolean isAnangram1 (String a, String b){
+
+        List<String> listA = new ArrayList<>(Arrays.asList(a.split("")));
+        List<String> listB = new ArrayList<>(Arrays.asList(b.split("")));
+
+        Collections.sort(listA);
+        Collections.sort(listB);
+
+        return listA.equals(listB);
+    }
+
+    public static boolean newAnagramTest (String a, String b){
+        List<String> listA = new ArrayList<>(Arrays.asList(a.split("")));
+        List<String> listB = new ArrayList<>(Arrays.asList(b.split("")));
+
+        Collections.sort(listA);
+        Collections.sort(listB);
+
+        return listA.equals(listB);
     }
 }
 

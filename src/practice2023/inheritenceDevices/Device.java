@@ -7,7 +7,7 @@ public class Device {
     boolean isWireless;
 
     public Device(){
-
+        System.out.println("Using the device");
     }
     public Device(String brand, String model, Double price, Boolean isWireless){
         this.brand=brand;
