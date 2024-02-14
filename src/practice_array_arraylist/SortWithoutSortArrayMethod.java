@@ -17,6 +17,7 @@ public class SortWithoutSortArrayMethod {
         System.out.println("bubbleSortDesc2(arr) = " + bubbleSortDesc2(arr));
         System.out.println("bubbleSortAsc3(arr) = " + bubbleSortAsc3(arr));
         System.out.println("bubbleSortDesc3(arr) = " + bubbleSortDesc3(arr));
+        System.out.println("bubbleSortAsc4(arr) = " + bubbleSortAsc4(arr));
     }
 
     public static ArrayList<Integer> ascendingWithoutSortArrayMethod(ArrayList<Integer> list) {
@@ -148,6 +149,22 @@ public class SortWithoutSortArrayMethod {
         for (int i = 0; i < nums.size(); i++) {
             for (int j = 0; j < nums.size(); j++) {
                 if (nums.get(i)>nums.get(j)){
+                    temp = nums.get(i);
+                    nums.set(i,nums.get(j));
+                    nums.set(j,temp);
+                }
+            }
+        }
+
+        return nums;
+    }
+
+    public static List<Integer> bubbleSortAsc4 (List<Integer> nums){
+
+        int temp = 0;
+        for (int i = 0; i < nums.size(); i++) {
+            for (int j = 0; j < nums.size(); j++) {
+                if (nums.get(i)<nums.get(j)){
                     temp = nums.get(i);
                     nums.set(i,nums.get(j));
                     nums.set(j,temp);
