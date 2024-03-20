@@ -174,6 +174,22 @@ public class SortWithoutSortArrayMethod {
 
         return nums;
     }
+
+    public static List<Integer> bubbleSortDesc5 (List<Integer> nums){
+
+        int temp = 0;
+        for (int i = 0; i < nums.size(); i++) {
+            for (int j = 0; j < nums.size(); j++) {
+                if (nums.get(i)>nums.get(j)){
+                    temp = nums.get(i);
+                    nums.set(i,nums.get(j));
+                    nums.set(j, temp);
+                }
+            }
+        }
+
+        return nums;
+    }
 }
 
 

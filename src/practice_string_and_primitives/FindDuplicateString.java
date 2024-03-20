@@ -13,6 +13,7 @@ public class FindDuplicateString {
         findDuplicates(str);
         System.out.println("findDuplicates2(str) = " + findDuplicates2(str));
         System.out.println("findDuplicates3(str) = " + findDuplicates3(str));
+        System.out.println("findDuplicates4(str) = " + findDuplicates4(str));
     }
 
     public static String findDuplicateString (String a){
@@ -107,6 +108,20 @@ public class FindDuplicateString {
             int freq = Collections.frequency(listStr,eachWord);
             if (!output.containsKey(eachWord) && freq>1){
                 output.put(eachWord,freq);
+            }
+        }
+
+        return output;
+    }
+
+    public static Map<String, Integer> findDuplicates4 (String str){
+        List<String> listStr = new ArrayList<>(Arrays.asList(str.split(" ")));
+        Map<String,Integer> output = new HashMap<>();
+
+        for(String eachWord : listStr){
+            if (!output.containsKey(eachWord) && Collections.frequency(listStr,eachWord)>1){
+
+                output.put(eachWord, Collections.frequency(listStr,eachWord));
             }
         }
 

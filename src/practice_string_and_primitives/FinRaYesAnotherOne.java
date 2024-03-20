@@ -5,6 +5,7 @@ public class FinRaYesAnotherOne {
 //        finRa(30);
 //        finRa3(30);
         finRaStrBldr3(30);
+        finRaStrBldr4(30);
     }
 
     public static void finRa(int num) {
@@ -129,6 +130,24 @@ public class FinRaYesAnotherOne {
             builder.append("\n");
         }
 
+        System.out.println(builder);
+    }
+
+    public static void finRaStrBldr4(int num){
+
+        StringBuilder builder= new StringBuilder();
+        for (int i = 0; i <= num; i++) {
+            if (i%5 == 0){
+                builder.append("Fin");
+            }
+            if (i%3 == 0){
+                builder.append("Ra");
+            }
+            if (i%5!=0 && i%3!= 0){
+                builder.append(i);
+            }
+            builder.append("\n");
+        }
         System.out.println(builder);
     }
 }
